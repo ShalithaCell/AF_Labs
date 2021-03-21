@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab2</title>
+</head>
+<body>
+    Press 12 or Open Inspect element to see result
+</body>
+<script>
+    // =============== 2 START ===============
+
+    console.log('============================Question 2============================');
+    console.log("");
+
+    // * Create a class named Vehicle using a function
+    // * Add a property named type to the class (this.type). Assign a value to that variable
+    // using a constructor argument.
+    // * Add VehicleCount (Vehicle.VehicleCount) as a static variable.
+    function Vehicle(type){
+        this.type = type;
+
+        if( typeof Vehicle.VehicleCount == 'undefined' ) {
+            Vehicle.VehicleCount = 0;
+        }
+
+        // Increase the number of VehicleCount (Vehicle.VehicleCount++) by one inside the constructor.
+        Vehicle.VehicleCount++;
+    }
+
+    // Add a function to its prototype named drive (Vehicle.prototype.print...). Print
+    // ‘Vehicle is driving’ in the function body
+    Vehicle.prototype.drive = function(){
+        console.log(this.type + " vehicle is driving");
+    }
+
+    Vehicle.VehicleCount = 0;
+    console.log(Vehicle.VehicleCount);
+
+    // Create an object from Vehicle class (new Vehicle) and check static variable value,
+    // type, property value and function work
+    const vehicle = new Vehicle("Nissan");
+    console.log("type - " + vehicle.type);
+    console.log("Vehicle Count - " + Vehicle.VehicleCount);
+    console.log(vehicle.drive());
+
+    // Create a class named Car and extend the class Vehicle (Car.prototype =
+    // Object.create(Vehicle.prototype); Car.prototype.constructor = Car).
+
+    function Car(type){
+        Vehicle.call(this, type);
+    }
+
+    Car.prototype = Object.create(Vehicle.prototype);
+    Car.prototype.constructor = Car;
+
+    // Add a new method called balanceWheels to Car and print ‘Wheels are balanced’ in
+    // the function body
+    Car.prototype.balanceWheels = function(){
+        console.log("Wheels are balanced");
+    };
+
+    // Call balanceWheels and drive methods using a car object and verify the functionality
+    const car = new Car("Honda");
+    car.drive();
+    car.balanceWheels();
+
+    console.log( "Car VehicleCount - " + Car.VehicleCount);
+    console.log("Car type - " + car.type);
+    console.log("Vehicle Count" + Vehicle.VehicleCount );
+
+    // =============== 2 END ===============
+</script>
+</html>

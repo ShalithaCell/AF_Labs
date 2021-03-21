@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab2</title>
+</head>
+<body>
+    Press 12 or Open Inspect element to see result
+</body>
+<script>
+    // =============== 5 START ===============
+
+    console.log('============================Question 5 ============================');
+    console.log("");
+
+    class Vehicle{
+        static vehicleCount =0 ;
+
+        constructor(type) {
+            this.type = type;
+            Vehicle.vehicleCount ++;
+        }
+
+
+        drive(){
+            console.log(this.type + " is driving");
+        }
+    }
+
+    let vehicle = new Vehicle("Nissan");
+
+    vehicle.drive();
+    console.log(Vehicle.vehicleCount);
+
+
+    class Car extends Vehicle{
+        constructor(type) {
+            super(type);
+        }
+
+        wheelBalance(){
+            console.log(this.type + " wheels are balanced.");
+
+        }
+    }
+
+    let car = new Car("Nissan");
+
+    car.wheelBalance();
+    car.drive();
+    console.log(Vehicle.vehicleCount);
+
+
+    console.log(vehicle);
+    console.log(car);
+
+    // ================================================================================
+    console.log("");
+
+    class Square{
+        constructor(length){
+            this.height = length;
+            this.width = length;
+        }
+
+        get getArea(){
+            return this.width * this.height;
+        };
+
+        set getArea(value){
+            this.height  = Math.sqrt(value);
+            this.width  = Math.sqrt(value);
+
+        }
+
+        area(){
+            return this.width * this.height;
+        }
+    }
+
+    let square1 = new Square(10);
+
+    square1.getArea = 64;
+
+    console.log("Area" + square1.area());
+    console.log(square1);
+
+    // =============== 5 END ===============
+</script>
+</html>
