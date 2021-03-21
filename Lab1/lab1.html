@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	Press 12 or Open Inspect element to see result
+</body>
+
+<script>
+	// =============== 1 START ===============
+	console.log('============================Question 1============================');
+	const func1 = function () {
+		console.log('Hello World');
+	}
+
+	function func2(data) {
+		data();
+	}
+
+	func2(func1);
+	// =============== 1 END ===============
+
+	// =============== 2 START ===============
+	console.log('============================Question 2============================');
+	const jsonObj = {
+		prop1: 'value',
+		prop2: function () { console.log('hi object') }
+	}
+	jsonObj.prop2();
+	// =============== 2 END ===============
+
+	// =============== 3 START ===============
+	console.log('============================Question 3============================');
+
+	vehicleName = 'Range Rover'
+
+	function printVehicleName() {
+		console.log(vehicleName);
+	}
+
+	var car = {
+		vehicleName: 'Land Rover',
+		printName: function () {
+			return function () {
+				console.log(this.vehicleName)
+			};
+		}
+	}
+
+	printVehicleName();
+
+	let action = car.printName();
+	action = action.bind(car)
+	action();
+
+	// =============== 3 END ===============
+
+	// =============== 4 START ===============
+	console.log('============================Question 4============================');
+	function taxCalculator(percentage) {
+		return function (amount) {
+			return amount * percentage;
+		}
+	}
+
+	const calculator = taxCalculator(.12);
+	console.log(calculator(200))
+
+	// =============== 4 END ===============
+
+	// =============== 5 START ===============
+	console.log('============================Question 5============================');
+
+	function httpGetAsync(theUrl, callback) {
+		var xmlHttp = new XMLHttpRequest();
+		xmlHttp.onreadystatechange = function () {
+			if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+				callback(xmlHttp.responseText);
+			}
+		}
+		xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+		xmlHttp.send(null);
+	}
+
+	function caller(data){
+		console.log(data)
+	}
+	
+	caller = httpGetAsync("https://jsonplaceholder.typicode.com/posts", caller);
+
+	// =============== 5 END ===============
+</script>
+
+</body>
+
+</html>

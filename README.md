@@ -1,2 +1,2 @@
 # AF_Labs
-All the Application Framwork lab sheet asnwers.
+All the Application Framework lab sheet answers.
