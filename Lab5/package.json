@@ -1,0 +1,14 @@
+{
+  "name": "lab5_koa",
+  "version": "1.0.0",
+  "description": "lab 5  answers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shalitha senanayaka (IT18216738)",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.1"
+  }
+}
