@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cdaff53-874d-462f-8379-8c8f99dd093f" name="Default Changelist" comment="lab 5 complete" />
+    <list default="true" id="5cdaff53-874d-462f-8379-8c8f99dd093f" name="Default Changelist" comment="lab 5 complete">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +59,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622226472294</updated>
-      <workItem from="1622226473379" duration="993000" />
+      <workItem from="1622226473379" duration="1371000" />
+      <workItem from="1622227851322" duration="88000" />
+      <workItem from="1622227960942" duration="13000" />
+      <workItem from="1622227975199" duration="43000" />
     </task>
     <task id="LOCAL-00001" summary="lab 5 complete">
       <created>1622226745810</created>
@@ -73,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622227335047</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="lab 5 complete">
+      <created>1622227490866</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622227490866</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,23 +101,28 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lab 5 complete" />
     <option name="LAST_COMMIT_MESSAGE" value="lab 5 complete" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1622227971471">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1622227971471" />
     <state x="184" y="86" key="MergeDialog" timestamp="1622227378742">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="MergeDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1622227378742" />
-    <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1622227378748">
+    <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1622227669926">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="281" key="MultipleFileMergeDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1622227378748" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1622227406615">
+    <state x="598" y="281" key="MultipleFileMergeDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1622227669926" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1622227493380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1622227406615" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1622227493380" />
   </component>
 </project>
